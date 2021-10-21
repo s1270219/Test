@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+
+[dev-packages]          /*開発者しか使わない*/
+flake8 = "*"　          /*コードを書くときにきれいに見せてくれる*/
+autopep8 = "*"          /*コードを整頓する*/
+
+[requires]
+python_version = "3.10"
+
+
+/*
+pipenv shell                        /*仮想環境作成*/
+pipenv install django               
+pipenv install flake8 autopep8      
+django-admin startproject config .  /*プロジェクトファイル（config）作成*/
+*/
